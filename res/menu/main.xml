@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hejian.quick.MainActivity" >
+
+    <item
+        android:id="@+id/search"
+        android:showAsAction="ifRoom|withText"
+        android:title="搜索"
+        android:icon="@drawable/search"
+        />
+
+</menu>

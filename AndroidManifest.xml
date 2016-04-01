@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hejian.quick"
+    android:versionCode="2"
+    android:versionName="2.27" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" 
+        android:maxSdkVersion="22"
+        />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".wel"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name=".landActivity"/>
+        <activity android:name=".bottomActivity"/>
+        <activity android:name=".phone_number"/>
+        <activity android:name=".become_bary"/>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".none"/>
+        <activity android:name=".people_message"/>
+        <activity android:name=".note"/>
+        <activity android:name=".set6"/>
+        <activity android:name=".set7"/>
+        <activity android:name=".main1"/>
+        <activity android:name=".main2"/>
+        <activity android:name=".main3"/>
+        <activity android:name=".main4"/>
+        <activity android:name=".main5"/>
+        <activity android:name=".main6"/>
+        <activity android:name=".main7"/>
+        <activity android:name=".main8"/>
+        <activity android:name=".change_people_message"/>
+        <activity android:name=".test"/>
+        <activity android:name=".filluserinfo"/>
+    </application>
+
+</manifest>

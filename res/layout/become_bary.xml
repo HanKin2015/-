@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/back"
+    >
+    
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:hint="请输入你要生成的二维码信息"
+        >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/become"
+        android:layout_width="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_gravity="right"
+        android:text="生成二维码" 
+        android:textSize="15sp"
+        />
+
+    <ImageView
+        android:id="@+id/ig"
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        />
+    
+</LinearLayout>
